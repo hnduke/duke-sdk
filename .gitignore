@@ -1,5 +1,8 @@
 venv
 dist
 *.pyc
+*.egg-info
 
 .idea
+
+.pytest_cache
