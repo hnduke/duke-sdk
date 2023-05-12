@@ -12,7 +12,7 @@ $ source venv/bin/activate
 ```
 2. Install the package from PyPi
 ```
-(venv) $ pip install the-one-api-sdk-duke
+(venv) $ pip install the_one_api_sdk_duke
 ```
 
 ## User Guide
