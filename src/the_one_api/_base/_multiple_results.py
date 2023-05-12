@@ -182,7 +182,7 @@ class MultipleObjectsMixin:
 
     def filter(self, *args, **kwargs):
         params = Filter(**kwargs).query_params if kwargs else ""
-        objs = self._make_request(self.endpoint + params, **kwargs)
+        objs = self._make_request("?".join([endpoint, params]), **kwargs)
 
         if objs is not None and "docs" in objs:
             return objs["docs"]
