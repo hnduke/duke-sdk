@@ -181,6 +181,9 @@ class MultipleObjectsMixin:
         return self.filter()
 
     def filter(self, *args, **kwargs):
+        endpoint = self.endpoint
+        if "endpoint" in kwargs:
+            endpoint = kwargs.pop("endpoint")
         params = Filter(**kwargs).query_params if kwargs else ""
         objs = self._make_request("?".join([endpoint, params]), **kwargs)
 
