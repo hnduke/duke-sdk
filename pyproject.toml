@@ -1,5 +1,5 @@
 [project]
-name = "the_one_api_python_sdk_heather_duke"
+name = "the_one_api_sdk_duke"
 version = "0.0.0"
 authors = [
   { name="Heather Duke", email="heathernoelduke@gmail.com" },
@@ -11,6 +11,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests==2.30.0"
 ]
 
 [project.urls]
